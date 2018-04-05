@@ -1,3 +1,4 @@
+extern alias XamarinIOS;
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="ConverterExtensions.cs" company="OxyPlot">
 //   Copyright (c) 2014 OxyPlot contributors
@@ -11,9 +12,9 @@ namespace OxyPlot.Xamarin.iOS
 {
     using System;
 
-    using CoreGraphics;
+    using XamarinIOS::CoreGraphics;
     using OxyPlot;
-    using UIKit;
+    using XamarinIOS::UIKit;
 
     /// <summary>
     /// Provides extension methods that converts between MonoTouch and OxyPlot types.

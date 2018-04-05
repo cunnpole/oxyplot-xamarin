@@ -1,3 +1,4 @@
+extern alias XamarinIOS;
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="CoreGraphicsRenderContext.cs" company="OxyPlot">
 //   Copyright (c) 2014 OxyPlot contributors
@@ -12,11 +13,11 @@ namespace OxyPlot.Xamarin.iOS
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
-    using CoreGraphics;
-    using CoreText;
-    using Foundation;
-    using UIKit;
+    using XamarinIOS::CoreGraphics;
+    using XamarinIOS::CoreText;
+    using XamarinIOS::Foundation;
+    using XamarinIOS::System;
+    using XamarinIOS::UIKit;
 
     /// <summary>
     /// Implements a <see cref="IRenderContext"/> for CoreGraphics.

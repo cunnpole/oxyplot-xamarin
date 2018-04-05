@@ -32,14 +32,12 @@
     <DocumentationFile>..\..\Output\Xamarin.iOS\OxyPlot.Xamarin.iOS.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OxyPlot, Version=2.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
-      <HintPath>..\packages\OxyPlot.Core.2.0.0-unstable0956\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.iOS">
+      <Aliases>XamarinIOS</Aliases>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PanZoomGestureRecognizer.cs" />
@@ -54,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\oxyplot\Source\OxyPlot\OxyPlot.csproj">
+      <Project>{6b61e217-a733-454f-a337-6ade8672c0f4}</Project>
+      <Name>OxyPlot</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -1,3 +1,4 @@
+extern alias XamarinIOS;
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="PlotView.cs" company="OxyPlot">
 //   Copyright (c) 2014 OxyPlot contributors
@@ -9,9 +10,9 @@
 
 namespace OxyPlot.Xamarin.iOS
 {
-    using Foundation;
     using OxyPlot;
-    using UIKit;
+    using XamarinIOS::Foundation;
+    using XamarinIOS::UIKit;
 
     /// <summary>
     /// Provides a view that can show a <see cref="PlotModel" />. 
@@ -51,7 +52,7 @@ namespace OxyPlot.Xamarin.iOS
         /// Initializes a new instance of the <see cref="OxyPlot.Xamarin.iOS.PlotView"/> class.
         /// </summary>
         /// <param name="frame">The initial frame.</param>
-        public PlotView(CoreGraphics.CGRect frame) : base(frame)
+        public PlotView(XamarinIOS::CoreGraphics.CGRect frame) : base(frame)
         {
             this.Initialize ();
         }
@@ -80,7 +81,7 @@ namespace OxyPlot.Xamarin.iOS
         /// Initialize the view.
         /// </summary>
         private void Initialize() {
-            this.UserInteractionEnabled = true;
+            this.UserInteractionEnabled = false;
             this.MultipleTouchEnabled = true;
             this.BackgroundColor = UIColor.White;
             this.KeepAspectRatioWhenPinching = true;
@@ -299,7 +300,7 @@ namespace OxyPlot.Xamarin.iOS
         /// Draws the content of the view.
         /// </summary>
         /// <param name="rect">The rectangle to draw.</param>
-        public override void Draw(CoreGraphics.CGRect rect)
+        public override void Draw(XamarinIOS::CoreGraphics.CGRect rect)
         {
             var actualModel = (IPlotModel)this.model;
             if (actualModel != null)

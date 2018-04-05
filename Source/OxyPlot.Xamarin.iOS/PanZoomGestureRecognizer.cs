@@ -1,3 +1,4 @@
+extern alias XamarinIOS;
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="PanZoomGestureRecognizer.cs" company="OxyPlot">
 //   Copyright (c) 2014 OxyPlot contributors
@@ -18,8 +19,8 @@ namespace OxyPlot.MonoTouch
     using System.Linq;
 
 #if __UNIFIED__
-    using global::Foundation;
-    using global::UIKit;
+    using XamarinIOS::Foundation;
+    using XamarinIOS::UIKit;
 #else
     using global::MonoTouch.Foundation;
     using global::MonoTouch.UIKit;

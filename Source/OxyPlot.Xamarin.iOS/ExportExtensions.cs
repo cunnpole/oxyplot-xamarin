@@ -1,3 +1,4 @@
+extern alias XamarinIOS;
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="ExportExtensions.cs" company="OxyPlot">
 //   Copyright (c) 2014 OxyPlot contributors
@@ -9,10 +10,10 @@
 
 namespace OxyPlot.Xamarin.iOS
 {
-    using CoreGraphics;
+    using XamarinIOS::CoreGraphics;
 
-    using Foundation;
-    using UIKit;
+    using XamarinIOS::Foundation;
+    using XamarinIOS::UIKit;
 
     /// <summary>
     /// Provides extension methods related to export.
