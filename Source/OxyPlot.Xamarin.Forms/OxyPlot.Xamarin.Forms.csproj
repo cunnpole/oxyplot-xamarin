@@ -16,7 +16,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.1.392594-pre3" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.1.444934" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\oxyplot\Source\OxyPlot\OxyPlot.csproj" />
