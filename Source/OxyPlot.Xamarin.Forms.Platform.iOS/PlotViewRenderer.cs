@@ -90,7 +90,7 @@ namespace OxyPlot.Xamarin.Forms.Platform.iOS
                 this.Control.BackgroundColor = this.Element.BackgroundColor.ToOxyColor().ToUIColor();
             }
 
-            if (e.PropertyName == VisualElement.IsVisibleProperty.PropertyName) {
+            if (e.PropertyName == VisualElement.IsVisibleProperty.PropertyName || e.PropertyName == VisualElement.WidthProperty.PropertyName) {
                 this.Control.InvalidatePlot (false);
             }
         }

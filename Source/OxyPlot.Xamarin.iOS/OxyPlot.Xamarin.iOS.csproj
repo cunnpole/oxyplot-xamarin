@@ -31,6 +31,19 @@
     <ConsolePause>false</ConsolePause>
     <DocumentationFile>..\..\Output\Xamarin.iOS\OxyPlot.Xamarin.iOS.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Live Release|AnyCPU'">
+    <OutputPath>bin\Live Release\</OutputPath>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;</DefineConstants>
+    <DocumentationFile>..\..\Output\Xamarin.iOS\OxyPlot.Xamarin.iOS.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Live Debug|AnyCPU'">
+    <OutputPath>bin\Live Debug\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

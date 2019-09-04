@@ -14,9 +14,10 @@
     <RepositoryUrl>https://github.com/oxyplot/oxyplot.git</RepositoryUrl>
     <SignAssembly>True</SignAssembly>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Configurations>Debug;Release;Live Release;Live Debug</Configurations>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\oxyplot\Source\OxyPlot\OxyPlot.csproj" />

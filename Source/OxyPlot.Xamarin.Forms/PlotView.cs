@@ -9,11 +9,9 @@
 
 namespace OxyPlot.Xamarin.Forms
 {
-    using System;
-
-    using OxyPlot;
-
     using global::Xamarin.Forms;
+    using OxyPlot;
+    using System;
 
     /// <summary>
     /// Represents a visual element that displays a <see cref="PlotModel" />.
